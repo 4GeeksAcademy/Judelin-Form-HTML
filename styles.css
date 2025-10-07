@@ -12,3 +12,11 @@
     width: 46%;
     border-radius: 5px;
 }
+
+.display{
+    display: flex;
+    
+}
+.display span{
+    margin-top: 4px;
+}
