@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="div-header">
+            <h2 class="bg-body-secondary marg p-2">Payment form example</h2>
+            <div class="alert alert-danger" role="alert">
+                Some fields are missing
+            </div>
+            <form class="row g-3">
+                <div class="col-5">
+                    <label class="form-label" for="imputcard">Card #</label>
+                    <input id="imputcard" placeholder="xxxxxxxxxxxxxx" class="form-control" type="Card">
+                </div>
+                <div class="col-3">
+                    <label class="form-label" for="imputcvc">CVC #</label>
+                    <input id="imputcvc" placeholder="0000" class="form-control" type="cvc">
+                </div>
+                <div class="col-4">
+                    <label class="form-label" for="imputamount">Amount</label>
+                    <input id="imputamount" placeholder="Amount" class="form-control" type="amount">
+                </div>
+                <div class="col-6">
+                    <label class="form-label" for="imputfirstname">First Name</label>
+                    <input id="imputfirstname" class="form-control" type="firsname">
+                </div>
+                <div class="col-6">
+                    <label class="form-label" for="imputlastname">Last Name</label>
+                    <input id="imputlastname" class="form-control" type="lastname">
+                </div>
+                <div class="col-6">
+                    <label class="form-label" for="imputcity">City</label>
+                    <input id="imputcity" class="form-control" type="city">
+                </div>
+                <div class="col-3">
+                    <label class="form-label" for="imputstate">State</label>
+                    <select id="imputstate" placeholder="Pick a State" class="form-select" type="state">
+                        <option selected>Choose...</option>
+                        <option value="1">Delaware</option>
+                        <option value="1">Maryland</option>
+                        <option value="1">New York</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <label class="form-label" for="imputpostalcode">Postal Code</label>
+                    <input id="imputpostalcode" class="form-control" type="postalcode">
+                </div>
+
+
+
+
+                <div class=" p-2 xp col-6">
+                    <p>We accept:</p>
+                    <div class="bg-secondary  p-2 ">
+                        <div class="form-check  form-check-inline">
+                            <input class="form-check-input" type="radio" id="mastercard" name="card" value="option1">
+                            <label class="form-check-label" for="mastercard"><i
+                                    class="fa-card fa-brands fa-cc-mastercard"></i></label>
+                        </div>
+                        <div class="form-check  form-check-inline">
+                            <input class="form-check-input" id="visa" name="card" value="option2" type="radio">
+                            <label class="form-check-label" for="visa">
+                                <i class="fa-card fa-brands fa-cc-visa"></i>
+                            </label>
+
+                        </div>
+                        <div class="form-check  form-check-inline">
+                            <input class='form-check-input' type="radio" name="card" id="discover" value="option3">
+                            <label class="form-check-label" for="discover"><i
+                                    class="fa-card fa-brands fa-cc-discover"></i></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="paypal" name="card" value="option4">
+                            <label for="paypal" class="form-check-label"><i
+                                    class="fa-card fa-brands fa-cc-paypal"></i></label>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6">
+                    <label class="form-check-label form-label" for="message"> Message</label>
+                    <textarea class="form-control" name="tarea-message" id="message" rows="3"></textarea>
+                    <p>Add any notes Here</p>
+
+
+                </div>
+                <div class=" marg bg-body-secondary text-end p-2 col-12 ">
+                    <button type="button" class="btn btn-primary btn-lg">Cancel</button>
+                    <button type="button" class="btn btn-secondary btn-lg">Send</button>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

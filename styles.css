@@ -1,0 +1,14 @@
+.container{
+    border: solid 3px rgba(230, 217, 217, 0.511);
+}
+.fa-card{
+    font-size: 20px;
+    color: white;
+}
+
+
+
+.xp .bg-secondary{
+    width: 46%;
+    border-radius: 5px;
+}
